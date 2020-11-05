@@ -1,24 +1,28 @@
 package com.example.store.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
+import lombok.*;
 
-import java.util.List;
+import java.time.LocalDateTime;
+
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
+@RequiredArgsConstructor
 public class Order {
-    @Id
+    @NonNull
+    int count;
+    @NonNull
     private String _id;
+    @NonNull
     private String name;
-    private List<Item> items;
+    @NonNull
+    private LocalDateTime dateOfOrder;
+    @NonNull
+    private Status status;
+    @NonNull
+    private Long sellingPrice;
 
-    public Order(String name, List<Item> items) {
-        this.name=name;
-        this.items = items;
-    }
+    private Double revenue;
+    private Double discount = 1d;
 }

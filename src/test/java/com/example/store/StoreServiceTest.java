@@ -1,7 +1,7 @@
 package com.example.store;
 
-import com.example.store.model.Product;
 import com.example.store.model.Item;
+import com.example.store.model.Product;
 import com.example.store.model.Store;
 import com.example.store.repositoty.StoreRepository;
 import org.junit.After;
@@ -46,15 +46,6 @@ public class StoreServiceTest {
         s.set_id("1234");
         s.setName("Simple Store");
 
-        /*List<Product> catalogs = Arrays.asList(
-                new Product("Book",Arrays.asList(new Item("Catch Me You If you Can",12L, LocalDate.of(2018, 6, 30),10))),
-                new Product("BiCycle",Arrays.asList(
-                        new Item("Specialized",16L, LocalDate.of(2020, 6, 30),20),
-                        new Item("Phonix",16L, LocalDate.of(2020, 6, 10),10)
-                    )
-                ),
-                new Product("Toy",Arrays.asList(new Item("Helicopter",12L, LocalDate.of(2016, 6, 01),25)))
-                );*/
 
         List<Item> items=new ArrayList<>();
         List<Product> products = new ArrayList<>();

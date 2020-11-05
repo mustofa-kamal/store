@@ -23,10 +23,9 @@ public class StoreApplication {
 	@Component
 	class Runner{
 		@EventListener(ApplicationReadyEvent.class)
-		public void intitializaForums() throws Exception{
-			storeRepository.deleteAll();
-
-		}
+        public void intitializForums() throws Exception {
+            storeRepository.deleteAll();
+        }
 
 	}
 
