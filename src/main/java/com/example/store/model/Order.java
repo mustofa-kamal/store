@@ -11,13 +11,13 @@ import java.time.LocalDateTime;
 @RequiredArgsConstructor
 public class Order {
     @NonNull
-    int count;
-    @NonNull
     private String _id;
     @NonNull
     private String name;
     @NonNull
     private LocalDateTime dateOfOrder;
+    @NonNull
+    int count;
     @NonNull
     private Status status;
     @NonNull
